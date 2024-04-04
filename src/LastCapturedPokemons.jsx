@@ -1,3 +1,4 @@
+import Pokemon from "./Pokemon";
 const LastCapturedPokemons = ({pokemons}) => {
    
     
@@ -12,9 +13,7 @@ const LastCapturedPokemons = ({pokemons}) => {
         {lastThreePokemons.map((pokemons) => {
           return (
             <article>
-              <h2>Name:{pokemons.name}</h2>
-              <p> Type: {pokemons.type}</p>
-              <img src= {pokemons.image} alt={pokemons.name}/>
+             <Pokemon pokemon={pokemons}/>
             </article>
           );
         })}

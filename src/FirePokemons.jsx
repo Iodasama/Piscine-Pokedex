@@ -1,3 +1,4 @@
+import Pokemon from "./Pokemon";
 const FirePokemons = ({pokemons}) => {
    
     
@@ -10,11 +11,8 @@ const FirePokemons = ({pokemons}) => {
             
             <section>
                  {result.map((pokemonfire) => {
-                        return( <article>
-                        <h2>Name:{pokemonfire.name}</h2>
-                        <p>Class:{pokemonfire.type}</p>
-                        <img src={pokemonfire.image}/>
-                        </article>
+                        return( 
+                            <Pokemon pokemon={pokemonfire}/>
                 );
                 })};
                

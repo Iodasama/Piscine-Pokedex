@@ -1,3 +1,5 @@
+import Pokemon from "./Pokemon";
+
 const RandomPokemon = ({pokemons}) => {
    
     
@@ -9,12 +11,7 @@ const RandomPokemon = ({pokemons}) => {
 
             
         <section>
-                    <article>
-                    <h2>Name:{randomPoke.name}</h2>
-                    <p>Class:{randomPoke.type}</p>
-                    <img src={randomPoke.image}/>
-                    </article>;
-            
+                    <Pokemon pokemon={randomPoke}/>
         </section>
             )
         };
