@@ -83,9 +83,9 @@ function App() {
   return (
 <>
   <Header/>
-  <LastCapturedPokemons />
-  <RandomPokemon />
-  <FirePokemons />
+  <LastCapturedPokemons pokemons= {pokemons}/>
+  <RandomPokemon pokemons= {pokemons} />
+  <FirePokemons pokemons= {pokemons} />
   <Footer/>
   
 </> 
